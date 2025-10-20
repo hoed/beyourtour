@@ -1,77 +1,43 @@
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import { 
-  Compass, Users, Shield, Heart, Camera, Map, 
-  Utensils, Hotel, Car, Plane, Clock, Award 
+  FileText, Car, Users, Building2, Landmark, MapIcon
 } from "lucide-react";
 import heroHome from "@/assets/hero-home.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Services = () => {
-  const coreServices = [
+  const mainServices = [
     {
-      icon: Compass,
-      title: "Guided Tours",
-      description: "Expert local guides with deep knowledge of Java's history, culture, and hidden gems. Our guides speak English and are passionate about sharing their homeland.",
-    },
-    {
-      icon: Users,
-      title: "Custom Itineraries",
-      description: "Personalized travel experiences designed around your interests, budget, and schedule. We create journeys that match your unique travel style.",
-    },
-    {
-      icon: Shield,
-      title: "Safe & Reliable",
-      description: "Professional service with comprehensive insurance, safety protocols, and 24/7 support. Your safety and comfort are our top priorities.",
-    },
-    {
-      icon: Heart,
-      title: "Cultural Immersion",
-      description: "Authentic experiences connecting you with local communities, traditional crafts, and Indonesian hospitality beyond typical tourist paths.",
-    },
-  ];
-
-  const additionalServices = [
-    {
-      icon: Hotel,
-      title: "Accommodation Booking",
-      description: "From budget homestays to luxury resorts, we arrange lodging that suits your preferences and budget.",
+      icon: FileText,
+      title: "Travel Documents",
+      description: "Comprehensive assistance with visa applications, travel permits, and all necessary documentation for your Java adventure. We handle the paperwork so you can focus on your journey.",
     },
     {
       icon: Car,
-      title: "Private Transportation",
-      description: "Comfortable air-conditioned vehicles with experienced drivers for all your travel needs.",
+      title: "Car/Bus Rental",
+      description: "Comfortable, air-conditioned vehicles with professional drivers. From private cars for intimate groups to spacious buses for large parties, we provide reliable transportation across Java.",
     },
     {
-      icon: Utensils,
-      title: "Culinary Experiences",
-      description: "Food tours, cooking classes, and restaurant reservations to explore Indonesia's diverse cuisine.",
+      icon: Users,
+      title: "Tour Guide Services",
+      description: "Expert local guides fluent in English with deep knowledge of Java's history, culture, and hidden gems. Our passionate guides bring every destination to life with authentic storytelling.",
     },
     {
-      icon: Camera,
-      title: "Photography Tours",
-      description: "Specialized tours for photographers to capture Java's landscapes, culture, and wildlife at optimal times.",
+      icon: Building2,
+      title: "MICE Services",
+      description: "Professional event management for Meetings, Incentives, Conferences, and Exhibitions. We organize corporate events with venue booking, logistics, team building activities, and cultural programs.",
     },
     {
-      icon: Map,
-      title: "Multi-Day Expeditions",
-      description: "Extended adventures combining multiple destinations across Java with seamless logistics.",
+      icon: Landmark,
+      title: "Tourism Village Development",
+      description: "Consulting and support for developing sustainable tourism in rural communities. We help villages create authentic tourism experiences while preserving cultural heritage and supporting local economies.",
     },
     {
-      icon: Plane,
-      title: "Airport Transfers",
-      description: "Reliable pick-up and drop-off services from all major airports in Java.",
-    },
-    {
-      icon: Clock,
-      title: "Flexible Scheduling",
-      description: "Tours that adapt to your pace, with options for early starts, leisurely exploration, or packed itineraries.",
-    },
-    {
-      icon: Award,
-      title: "Special Occasions",
-      description: "Customized experiences for honeymoons, anniversaries, family reunions, or group celebrations.",
+      icon: MapIcon,
+      title: "Tour Packages",
+      description: "Carefully curated tour packages covering Java's most captivating destinations. From cultural explorations to thrilling adventures, our packages offer complete experiences with accommodation, meals, and activities.",
     },
   ];
 
@@ -84,80 +50,70 @@ const Services = () => {
         height="medium"
       />
 
-      {/* Core Services */}
+      {/* Main Services */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">
-              Why Choose Be Your Tour
+              Our Tourism Services
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our tour packages offer a variety of experiences, from cultural explorations to thrilling adventures. 
-              With years of expertise and a commitment to excellence, we ensure every journey exceeds your expectations.
+              Be Your Tour is a provider of tourism services. We offer several interesting places or tourist 
+              attractions throughout the archipelago. Our tour packages offer a variety of experiences, 
+              from cultural explorations to thrilling adventures.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {coreServices.map((service) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {mainServices.map((service) => (
               <ServiceCard key={service.title} {...service} />
             ))}
           </div>
         </div>
       </section>
 
-      {/* Additional Services */}
+      {/* Service Features */}
       <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">
-              Complete Travel Solutions
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We handle every detail so you can focus on enjoying your journey.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {additionalServices.map((service) => (
-              <ServiceCard key={service.title} {...service} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Our Approach */}
-      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-center mb-12">
-              Our Approach to Tourism
+              Why Choose Our Services
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <Heart className="w-8 h-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold font-heading mb-3">Sustainable Tourism</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-card rounded-xl p-6 card-shadow">
+                <h3 className="text-xl font-semibold font-heading mb-3">🌟 Professional Excellence</h3>
                 <p className="text-muted-foreground">
-                  We support local communities and promote eco-friendly practices to preserve Java's natural and cultural heritage.
+                  Years of experience delivering high-quality tourism services with attention to every detail and customer satisfaction.
                 </p>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-secondary" />
-                </div>
-                <h3 className="text-xl font-semibold font-heading mb-3">Local Partnerships</h3>
+              <div className="bg-card rounded-xl p-6 card-shadow">
+                <h3 className="text-xl font-semibold font-heading mb-3">🤝 Trusted Partner</h3>
                 <p className="text-muted-foreground">
-                  We work directly with local guides, artisans, and businesses to ensure authentic experiences and community benefits.
+                  Thousands of satisfied clients trust us for their Java adventures, from individual travelers to corporate groups.
                 </p>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
-                  <Award className="w-8 h-8 text-accent" />
-                </div>
-                <h3 className="text-xl font-semibold font-heading mb-3">Quality Assurance</h3>
+              <div className="bg-card rounded-xl p-6 card-shadow">
+                <h3 className="text-xl font-semibold font-heading mb-3">🎯 Customized Solutions</h3>
                 <p className="text-muted-foreground">
-                  Every aspect of our tours is carefully vetted for quality, safety, and authentic experiences.
+                  Every service can be tailored to your specific needs, budget, and preferences for a truly personalized experience.
+                </p>
+              </div>
+              <div className="bg-card rounded-xl p-6 card-shadow">
+                <h3 className="text-xl font-semibold font-heading mb-3">💼 Complete Support</h3>
+                <p className="text-muted-foreground">
+                  From initial planning to final farewell, we provide comprehensive support including 24/7 assistance during your tour.
+                </p>
+              </div>
+              <div className="bg-card rounded-xl p-6 card-shadow">
+                <h3 className="text-xl font-semibold font-heading mb-3">🌍 Local Expertise</h3>
+                <p className="text-muted-foreground">
+                  Our team consists of locals who know Java intimately, ensuring authentic experiences and insider knowledge.
+                </p>
+              </div>
+              <div className="bg-card rounded-xl p-6 card-shadow">
+                <h3 className="text-xl font-semibold font-heading mb-3">✅ Transparent Pricing</h3>
+                <p className="text-muted-foreground">
+                  No hidden fees or surprises. We provide clear, upfront pricing with detailed breakdowns of all services included.
                 </p>
               </div>
             </div>
