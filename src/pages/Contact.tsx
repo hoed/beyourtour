@@ -248,10 +248,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold font-heading mb-1">Email</h3>
                     <a
-                      href="mailto:info@beyourtour.com"
+                      href="mailto:beyourtour@gmail.com"
                       className="text-muted-foreground hover:text-primary transition-smooth"
                     >
-                      info@beyourtour.com
+                      beyourtour@gmail.com
                     </a>
                   </div>
                 </div>
@@ -263,10 +263,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold font-heading mb-1">Phone / WhatsApp</h3>
                     <a
-                      href="tel:+62123456789"
+                      href="tel:+6281553942464"
                       className="text-muted-foreground hover:text-secondary transition-smooth"
                     >
-                      +62 123 456 789
+                      +62 8155 394 2464
                     </a>
                   </div>
                 </div>
@@ -278,7 +278,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold font-heading mb-1">Location</h3>
                     <p className="text-muted-foreground">
-                      Java, Indonesia
+                      Educity Apartment Y&P Tower A17, Surabaya, Indonesia
                     </p>
                   </div>
                 </div>
