@@ -10,6 +10,31 @@ import heroCentralJava from "@/assets/hero-central-java.jpg";
 import heroWestJava from "@/assets/hero-west-java.jpg";
 
 const Home = () => {
+  // Structured data for SEO
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Be Your Tour",
+    "description": "Discover the heart of Java with authentic tours across Indonesia's most captivating island",
+    "url": "https://beyourtour.com",
+    "logo": "https://beyourtour.com/logo.png",
+    "sameAs": [
+      "https://instagram.com/beyourtour",
+      "https://facebook.com/beyourtour"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Indonesia",
+      "addressRegion": "Java"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+62-123-456-789",
+      "contactType": "customer service",
+      "email": "info@beyourtour.com"
+    }
+  };
+
   const destinations = [
     {
       title: "East Java",
@@ -56,6 +81,10 @@ const Home = () => {
 
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
       {/* Hero Section */}
       <Hero
         image={heroHome}

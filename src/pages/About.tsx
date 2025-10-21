@@ -5,6 +5,21 @@ import gallery1 from "@/assets/gallery-1.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 
 const About = () => {
+  // Structured data for SEO
+  const aboutPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Be Your Tour",
+    "description": "Learn about Be Your Tour, your trusted partner for authentic Java experiences and professional tourism services across Indonesia",
+    "mainEntity": {
+      "@type": "TravelAgency",
+      "name": "Be Your Tour",
+      "description": "Be Your Tour is a provider of tourism services offering interesting places and tourist attractions throughout Java, Indonesia",
+      "foundingDate": "2015",
+      "slogan": "Be Your Tour strives to be a leading tourism service provider in terms of quality, so that your comfort and safety will be guaranteed and make your trip even more memorable"
+    }
+  };
+
   const values = [
     {
       icon: Heart,
@@ -30,6 +45,10 @@ const About = () => {
 
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
+      />
       <Hero
         image={heroHome}
         title="About Be Your Tour"

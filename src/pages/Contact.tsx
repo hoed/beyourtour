@@ -15,17 +15,38 @@ const contactSchema = z.object({
   phone: z.string().trim().max(20).optional(),
   subject: z.string().trim().min(1, { message: "Subject is required" }).max(200),
   message: z.string().trim().min(10, { message: "Message must be at least 10 characters" }).max(2000),
+  honeypot: z.string().max(0, { message: "Spam detected" }).optional(),
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
 
 const Contact = () => {
+  // Structured data for SEO
+  const contactPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Be Your Tour",
+    "description": "Get in touch with Be Your Tour to plan your perfect Java adventure. Contact us via email, phone, or WhatsApp",
+    "mainEntity": {
+      "@type": "TravelAgency",
+      "name": "Be Your Tour",
+      "email": "info@beyourtour.com",
+      "telephone": "+62-123-456-789",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Indonesia",
+        "addressRegion": "Java"
+      }
+    }
+  };
+
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
     phone: "",
     subject: "",
     message: "",
+    honeypot: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -58,6 +79,7 @@ const Contact = () => {
         phone: "",
         subject: "",
         message: "",
+        honeypot: "",
       });
     } catch (error) {
       if (error instanceof z.ZodError) {
@@ -77,6 +99,10 @@ const Contact = () => {
 
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
+      />
       <Hero
         image={heroHome}
         title="Get in Touch"
@@ -160,6 +186,23 @@ const Contact = () => {
                     className="mt-2 min-h-[150px]"
                   />
                 </div>
+
+                {/* Honeypot field for spam protection - hidden from users */}
+                <input
+                  type="text"
+                  name="honeypot"
+                  value={formData.honeypot}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  style={{
+                    position: "absolute",
+                    left: "-9999px",
+                    width: "1px",
+                    height: "1px",
+                  }}
+                  aria-hidden="true"
+                />
 
                 <Button
                   type="submit"

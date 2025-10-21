@@ -11,6 +11,7 @@ import gallery4 from "@/assets/gallery-4.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
   const images = [
     { src: heroHome, alt: "Java volcanic landscape with rice terraces", category: "Landscapes" },
@@ -45,9 +46,28 @@ const Gallery = () => {
             </p>
           </div>
 
+          {/* Category Filter */}
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+            {["All", "East Java", "Central Java", "West Java", "Landscapes", "Culture", "Activities", "Cuisine"].map((category) => (
+              <button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={`px-5 py-2.5 rounded-lg font-medium transition-all duration-300 ${
+                  selectedCategory === category
+                    ? "bg-primary text-primary-foreground shadow-lg scale-105"
+                    : "bg-muted text-muted-foreground hover:bg-muted/70 hover:scale-105"
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {images.map((image, index) => (
+            {images
+              .filter((img) => selectedCategory === "All" || img.category === selectedCategory)
+              .map((image, index) => (
               <div
                 key={index}
                 className="group relative aspect-square overflow-hidden rounded-xl cursor-pointer card-shadow hover:card-shadow-hover transition-smooth"

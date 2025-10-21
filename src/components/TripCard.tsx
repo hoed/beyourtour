@@ -14,7 +14,7 @@ interface TripCardProps {
 
 const TripCard = ({ title, description, image, duration, groupSize, location, price }: TripCardProps) => {
   return (
-    <div className="bg-card rounded-xl overflow-hidden card-shadow hover:card-shadow-hover transition-smooth">
+    <div className="bg-card rounded-xl overflow-hidden card-shadow hover:card-shadow-hover transition-smooth hover:scale-[1.02] hover:-translate-y-1 duration-300">
       <div className="relative h-56 overflow-hidden">
         <img
           src={image}
