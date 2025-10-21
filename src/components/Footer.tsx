@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Mountain, Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,11 +11,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <Mountain className="w-8 h-8 text-primary" />
+            <div className="flex items-center space-x-3">
+              <img src={logo} alt="Be Your Tour Logo" className="w-12 h-12 object-contain" />
               <div className="flex flex-col">
                 <span className="text-lg font-bold font-heading">Be Your Tour</span>
-                <span className="text-xs text-muted-foreground">Discover Java</span>
+                <span className="text-xs text-muted-foreground">Tour and Travel</span>
               </div>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -102,18 +103,18 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
-                <span>Java, Indonesia</span>
+                <span>Educity Apartment Y&P Tower A17</span>
               </li>
               <li className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="mailto:info@beyourtour.com" className="hover:text-primary transition-smooth">
-                  info@beyourtour.com
+                <a href="mailto:beyourtour@gmail.com" className="hover:text-primary transition-smooth">
+                  beyourtour@gmail.com
                 </a>
               </li>
               <li className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="tel:+62123456789" className="hover:text-primary transition-smooth">
-                  +62 123 456 789
+                <a href="tel:+6281553942464" className="hover:text-primary transition-smooth">
+                  +62 815 5394 2464
                 </a>
               </li>
             </ul>
