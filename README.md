@@ -76,18 +76,14 @@ The build artifacts will be in the `dist` directory. Serve them with any static 
 
 You have multiple options to customize and extend the application:
 
-1. **Via Lovable (Recommended for AI-Assisted Development)**:
-   - Visit the [Lovable Project Dashboard](https://lovable.dev/projects/466947ab-ddd9-436e-93d4-a88ff9940fd0).
-   - Use natural language prompts to generate or modify code—changes are auto-committed to this repo.
-
-2. **Local IDE (VS Code, etc.)**:
+1. **Local IDE (VS Code, etc.)**:
    - Follow the installation steps above.
    - Make changes, then commit and push to GitHub. Updates will sync to Lovable.
 
-3. **Directly in GitHub**:
+2. **Directly in GitHub**:
    - Navigate to a file, click the pencil icon to edit, and commit your changes.
 
-4. **GitHub Codespaces**:
+3. **GitHub Codespaces**:
    - From the repo's main page, click "Code" > "Codespaces" > "New codespace".
    - Edit and push from the cloud-based VS Code environment.
 
@@ -149,4 +145,4 @@ Thanks for exploring BeYourTour—let's make travel magical! 🌍✨
 
 ---
 
-*Generated with ❤️ by Grok on October 22, 2025.*
+*Generated with ❤️ on October 22, 2025.*
