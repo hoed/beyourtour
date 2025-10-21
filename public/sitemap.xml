@@ -1,16 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Home page -->
+  <url>
+    <loc>https://beyourtour.vercel.app/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
 
+  <!-- Destinations overview -->
+  <url>
+    <loc>https://beyourtour.vercel.app/destinations/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://beyourtour.vercel.app/</loc>
-  <lastmod>2025-10-21T21:37:41+00:00</lastmod>
-</url>
+  <!-- Region pages -->
+  <url>
+    <loc>https://beyourtour.vercel.app/destinations/east-java/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beyourtour.vercel.app/destinations/central-java/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://beyourtour.vercel.app/destinations/west-java/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
+  <!-- Services page -->
+  <url>
+    <loc>https://beyourtour.vercel.app/services/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Gallery page -->
+  <url>
+    <loc>https://beyourtour.vercel.app/gallery/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- About Us page -->
+  <url>
+    <loc>https://beyourtour.vercel.app/about-us/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Contact Us page -->
+  <url>
+    <loc>https://beyourtour.vercel.app/contact-us/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Trips / Packages listing -->
+  <url>
+    <loc>https://beyourtour.vercel.app/trips/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Package detail example -->
+  <url>
+    <loc>https://beyourtour.vercel.app/trips/example-package/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
 </urlset>
