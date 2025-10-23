@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import { MapIcon, Check } from "lucide-react";
 import heroHome from "@/assets/hero-home.jpg";
+import tourPackageImage from "@/assets/service-tour-packages.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -43,6 +44,14 @@ const TourPackages = () => {
               Each package is designed to showcase the best of Java while ensuring your comfort and creating 
               unforgettable memories.
             </p>
+
+            <div className="mb-12 rounded-xl overflow-hidden card-shadow">
+              <img 
+                src={tourPackageImage} 
+                alt="Tour package essentials - passport, map, tickets"
+                className="w-full h-[400px] object-cover"
+              />
+            </div>
 
             <div className="bg-card rounded-xl p-8 card-shadow mb-12">
               <h3 className="text-2xl font-semibold font-heading mb-6">What's Included</h3>

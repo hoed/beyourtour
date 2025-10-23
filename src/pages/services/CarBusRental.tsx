@@ -1,6 +1,9 @@
 import Hero from "@/components/Hero";
 import { Car, Check } from "lucide-react";
 import heroHome from "@/assets/hero-home.jpg";
+import privateCar from "@/assets/vehicle-private-car.jpg";
+import van from "@/assets/vehicle-van.jpg";
+import bus from "@/assets/vehicle-bus.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -9,16 +12,19 @@ const CarBusRental = () => {
     {
       type: "Private Cars",
       capacity: "4-6 passengers",
+      image: privateCar,
       features: ["Air-conditioned", "Professional driver", "Comfortable seating", "Luggage space"]
     },
     {
       type: "Mini Bus",
       capacity: "10-15 passengers",
+      image: van,
       features: ["Air-conditioned", "Experienced driver", "Reclining seats", "Entertainment system"]
     },
     {
       type: "Large Bus",
       capacity: "25-45 passengers",
+      image: bus,
       features: ["Air-conditioned", "Professional driver", "Spacious interior", "Audio system"]
     }
   ];
@@ -34,7 +40,7 @@ const CarBusRental = () => {
 
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="flex items-center justify-center mb-8">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
                 <Car className="w-8 h-8 text-primary" />
@@ -51,18 +57,27 @@ const CarBusRental = () => {
               professional drivers who know Java's roads intimately.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {vehicles.map((vehicle) => (
-                <div key={vehicle.type} className="bg-card rounded-xl p-6 card-shadow">
-                  <h3 className="text-xl font-semibold font-heading mb-2">{vehicle.type}</h3>
-                  <p className="text-primary font-medium mb-4">{vehicle.capacity}</p>
-                  <div className="space-y-2">
-                    {vehicle.features.map((feature) => (
-                      <div key={feature} className="flex items-center gap-2">
-                        <Check className="w-4 h-4 text-primary flex-shrink-0" />
-                        <span className="text-sm text-muted-foreground">{feature}</span>
-                      </div>
-                    ))}
+                <div key={vehicle.type} className="bg-card rounded-xl overflow-hidden card-shadow hover:card-shadow-hover transition-smooth">
+                  <div className="aspect-video overflow-hidden">
+                    <img 
+                      src={vehicle.image} 
+                      alt={vehicle.type}
+                      className="w-full h-full object-cover hover:scale-110 transition-smooth"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold font-heading mb-2">{vehicle.type}</h3>
+                    <p className="text-primary font-medium mb-4">{vehicle.capacity}</p>
+                    <div className="space-y-2">
+                      {vehicle.features.map((feature) => (
+                        <div key={feature} className="flex items-center gap-2">
+                          <Check className="w-4 h-4 text-primary flex-shrink-0" />
+                          <span className="text-sm text-muted-foreground">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))}

@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import { Landmark, Check } from "lucide-react";
 import heroHome from "@/assets/hero-home.jpg";
+import tourismVillageImage from "@/assets/service-tourism-village.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -27,7 +28,7 @@ const TourismVillage = () => {
 
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="flex items-center justify-center mb-8">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
                 <Landmark className="w-8 h-8 text-primary" />
@@ -43,6 +44,14 @@ const TourismVillage = () => {
               approach helps villages create authentic tourism experiences while preserving cultural heritage, 
               protecting the environment, and supporting local economies.
             </p>
+
+            <div className="mb-12 rounded-xl overflow-hidden card-shadow">
+              <img 
+                src={tourismVillageImage} 
+                alt="Traditional Indonesian tourism village"
+                className="w-full h-[400px] object-cover"
+              />
+            </div>
 
             <div className="bg-card rounded-xl p-8 card-shadow mb-12">
               <h3 className="text-2xl font-semibold font-heading mb-6">Our Comprehensive Services</h3>

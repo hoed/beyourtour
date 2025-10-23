@@ -3,6 +3,10 @@ import { Users, Heart, Award, Globe } from "lucide-react";
 import heroHome from "@/assets/hero-home.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
+import teamMember1 from "@/assets/team-member-1.jpg";
+import teamMember2 from "@/assets/team-member-2.jpg";
+import teamMember3 from "@/assets/team-member-3.jpg";
+import teamMember4 from "@/assets/team-member-4.jpg";
 
 const About = () => {
   // Structured data for SEO
@@ -127,17 +131,80 @@ const About = () => {
       {/* Team */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">
               Meet Our Team
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Our team consists of experienced local guides, travel coordinators, and support staff who are all 
-              passionate about Java and dedicated to making your journey unforgettable. With expertise ranging 
-              from volcanic geology to cultural history, traditional arts to modern hospitality, we bring diverse 
-              knowledge and genuine enthusiasm to every tour.
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Our passionate team of travel experts and guides are dedicated to creating unforgettable 
+              experiences for every traveler.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-12">
+            <div className="text-center">
+              <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden card-shadow">
+                <img 
+                  src={teamMember1} 
+                  alt="Sarah - Tour Manager"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold font-heading mb-2">Sarah Wijaya</h3>
+              <p className="text-primary font-medium mb-2">Tour Manager</p>
+              <p className="text-muted-foreground text-sm">
+                Expert in organizing seamless travel experiences
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden card-shadow">
+                <img 
+                  src={teamMember2} 
+                  alt="Adi - Senior Guide"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold font-heading mb-2">Adi Kusuma</h3>
+              <p className="text-primary font-medium mb-2">Senior Guide</p>
+              <p className="text-muted-foreground text-sm">
+                10+ years guiding across Java's destinations
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden card-shadow">
+                <img 
+                  src={teamMember3} 
+                  alt="Rizky - Adventure Specialist"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold font-heading mb-2">Rizky Pratama</h3>
+              <p className="text-primary font-medium mb-2">Adventure Specialist</p>
+              <p className="text-muted-foreground text-sm">
+                Mountain trekking and outdoor activity expert
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden card-shadow">
+                <img 
+                  src={teamMember4} 
+                  alt="Budi - Operations Coordinator"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold font-heading mb-2">Budi Santoso</h3>
+              <p className="text-primary font-medium mb-2">Operations Coordinator</p>
+              <p className="text-muted-foreground text-sm">
+                Ensuring smooth logistics for every journey
+              </p>
+            </div>
+          </div>
+
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-muted-foreground">
               All our guides are certified, speak English fluently, and have undergone comprehensive training in 
               safety, first aid, and customer service. More importantly, they're locals who know the hidden gems, 
               the best photo spots, and the stories that bring Java to life.

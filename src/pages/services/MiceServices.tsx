@@ -1,6 +1,10 @@
 import Hero from "@/components/Hero";
 import { Building2, Check } from "lucide-react";
 import heroHome from "@/assets/hero-home.jpg";
+import miceMeeting from "@/assets/mice-meeting.jpg";
+import miceIncentive from "@/assets/mice-incentive.jpg";
+import miceConference from "@/assets/mice-conference.jpg";
+import miceExhibition from "@/assets/mice-exhibition.jpg";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -8,19 +12,23 @@ const MiceServices = () => {
   const services = [
     {
       title: "Meetings",
-      description: "Professional venue booking and logistics for corporate meetings of any size"
+      description: "Professional venue booking and logistics for corporate meetings of any size",
+      image: miceMeeting
     },
     {
       title: "Incentives",
-      description: "Reward programs combining business objectives with memorable travel experiences"
+      description: "Reward programs combining business objectives with memorable travel experiences",
+      image: miceIncentive
     },
     {
       title: "Conferences",
-      description: "Full-service conference management from planning to execution"
+      description: "Full-service conference management from planning to execution",
+      image: miceConference
     },
     {
       title: "Exhibitions",
-      description: "Trade show and exhibition coordination with local vendor networks"
+      description: "Trade show and exhibition coordination with local vendor networks",
+      image: miceExhibition
     }
   ];
 
@@ -35,7 +43,7 @@ const MiceServices = () => {
 
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="flex items-center justify-center mb-8">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
                 <Building2 className="w-8 h-8 text-primary" />
@@ -52,11 +60,20 @@ const MiceServices = () => {
               your business goals while we ensure a seamless experience.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               {services.map((service) => (
-                <div key={service.title} className="bg-card rounded-xl p-6 card-shadow">
-                  <h3 className="text-xl font-semibold font-heading mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground">{service.description}</p>
+                <div key={service.title} className="bg-card rounded-xl overflow-hidden card-shadow hover:card-shadow-hover transition-smooth">
+                  <div className="aspect-video overflow-hidden">
+                    <img 
+                      src={service.image} 
+                      alt={service.title}
+                      className="w-full h-full object-cover hover:scale-110 transition-smooth"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold font-heading mb-3">{service.title}</h3>
+                    <p className="text-muted-foreground">{service.description}</p>
+                  </div>
                 </div>
               ))}
             </div>

@@ -10,6 +10,7 @@ const Navigation = () => {
   const location = useLocation();
 
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [dropdownTimeout, setDropdownTimeout] = useState<NodeJS.Timeout | null>(null);
 
   const navLinks = [
     { to: "/", label: "Home" },
@@ -61,9 +62,18 @@ const Navigation = () => {
             ))}
             
             {/* Services Dropdown */}
-            <div className="relative" onMouseLeave={() => setIsServicesOpen(false)}>
+            <div 
+              className="relative" 
+              onMouseEnter={() => {
+                if (dropdownTimeout) clearTimeout(dropdownTimeout);
+                setIsServicesOpen(true);
+              }}
+              onMouseLeave={() => {
+                const timeout = setTimeout(() => setIsServicesOpen(false), 200);
+                setDropdownTimeout(timeout);
+              }}
+            >
               <button
-                onMouseEnter={() => setIsServicesOpen(true)}
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
                 className={cn(
                   "px-4 py-2 rounded-lg text-sm font-medium transition-smooth flex items-center gap-1",
@@ -77,7 +87,7 @@ const Navigation = () => {
               </button>
               
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-1 w-64 bg-background border border-border rounded-lg shadow-elegant z-50">
+                <div className="absolute top-full left-0 mt-1 w-64 bg-card border border-border rounded-lg shadow-lg z-50">
                   <div className="py-2">
                     {serviceLinks.map((link) => (
                       <Link
@@ -85,7 +95,7 @@ const Navigation = () => {
                         to={link.to}
                         onClick={() => setIsServicesOpen(false)}
                         className={cn(
-                          "block px-4 py-2 text-sm transition-smooth",
+                          "block px-4 py-3 text-sm transition-smooth",
                           isActive(link.to)
                             ? "text-primary bg-primary/10"
                             : "text-foreground hover:text-primary hover:bg-primary/5"
