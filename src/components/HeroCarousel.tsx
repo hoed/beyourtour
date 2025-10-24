@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useRef } from "react";
 import { cn } from "@/lib/utils";
 import {
   Carousel,
@@ -32,32 +32,24 @@ const HeroCarousel = ({
     large: "h-[85vh] min-h-[600px]",
   };
 
-  const [api, setApi] = useState<any>();
-
-  useEffect(() => {
-    if (!api) return;
-  }, [api]);
+  const plugin = useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: false })
+  );
 
   return (
     <section className={cn("relative w-full overflow-hidden", heightClasses[height])}>
       <Carousel
-        setApi={setApi}
         opts={{
           align: "start",
           loop: true,
         }}
-        plugins={[
-          Autoplay({
-            delay: 5000,
-          }),
-        ]}
-        className="w-full h-full absolute inset-0"
+        plugins={[plugin.current]}
+        className="w-full h-full"
       >
-        <CarouselContent className="h-full">
+        <CarouselContent className="h-full ml-0">
           {images.map((image, index) => (
-            <CarouselItem key={index} className="relative h-full">
-              {/* Background Image */}
-              <div className="absolute inset-0">
+            <CarouselItem key={index} className="pl-0 h-full">
+              <div className="relative w-full h-full">
                 <img
                   src={image}
                   alt={`${title} - slide ${index + 1}`}
