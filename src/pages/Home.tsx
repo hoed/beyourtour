@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Compass, Users, Shield, Heart } from "lucide-react";
+import { ArrowRight, Compass, Users, Shield, Heart, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Hero from "@/components/Hero";
+import HeroCarousel from "@/components/HeroCarousel";
 import DestinationCard from "@/components/DestinationCard";
 import ServiceCard from "@/components/ServiceCard";
 import heroHome from "@/assets/hero-home.jpg";
@@ -85,9 +85,9 @@ const Home = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
-      {/* Hero Section */}
-      <Hero
-        image={heroHome}
+      {/* Hero Section with Carousel */}
+      <HeroCarousel
+        images={[heroHome, heroEastJava, heroCentralJava]}
         title="Discover the Heart of Java"
         subtitle="Unforgettable adventures across Indonesia's most captivating island"
         height="large"
@@ -103,7 +103,7 @@ const Home = () => {
             <Link to="/contact">Plan Your Trip</Link>
           </Button>
         </div>
-      </Hero>
+      </HeroCarousel>
 
       {/* Introduction */}
       <section className="py-20 bg-background">
@@ -169,6 +169,41 @@ const Home = () => {
             <Button asChild size="lg" variant="outline" className="border-2 border-white bg-white/10 text-white hover:bg-white hover:text-foreground">
               <Link to="/trips">View All Tours</Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* AI Trip Planner Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-accent/10 via-primary/5 to-secondary/10 rounded-2xl p-8 md:p-12 border-2 border-accent/20 shadow-elegant">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="flex-shrink-0">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center shadow-glow">
+                  <Sparkles className="w-10 h-10 md:w-12 md:h-12 text-white" />
+                </div>
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <h2 className="text-2xl md:text-3xl font-bold font-heading mb-3">
+                  Try Our AI Trip Planner
+                </h2>
+                <p className="text-muted-foreground text-lg mb-6">
+                  Let artificial intelligence create your perfect itinerary. Get personalized recommendations, 
+                  optimize your route, and discover hidden gems with our smart travel planning assistant.
+                </p>
+                <Button asChild size="lg" variant="accent" className="group">
+                  <a 
+                    href="https://smartour.xyz" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Sparkles className="mr-2 w-5 h-5" />
+                    Launch AI Planner
+                    <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
