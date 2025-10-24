@@ -51,11 +51,11 @@ const HeroCarousel = ({
             delay: 5000,
           }),
         ]}
-        className="w-full h-full"
+        className="w-full h-full absolute inset-0"
       >
         <CarouselContent className="h-full">
           {images.map((image, index) => (
-            <CarouselItem key={index} className="h-full">
+            <CarouselItem key={index} className="relative h-full">
               {/* Background Image */}
               <div className="absolute inset-0">
                 <img
@@ -71,8 +71,8 @@ const HeroCarousel = ({
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="left-4 bg-white/10 border-white/20 hover:bg-white/20 text-white" />
-        <CarouselNext className="right-4 bg-white/10 border-white/20 hover:bg-white/20 text-white" />
+        <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/10 border-white/20 hover:bg-white/20 text-white" />
+        <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/10 border-white/20 hover:bg-white/20 text-white" />
       </Carousel>
 
       {/* Burning Paper Edge Effect at Bottom */}
