@@ -3,8 +3,6 @@ import Hero from "@/components/Hero";
 import heroHome from "@/assets/hero-home.jpg";
 import heroEastJava from "@/assets/bromo0-beyourtour.jpg";
 import heroCentralJava from "@/assets/hero-central-java.jpg";
-import heroWestJava from "@/assets/hero-west-java.jpg";
-import heroEastJavaAlt from "@/assets/hero-east-java.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
@@ -22,7 +20,6 @@ import batuPandang from "@/assets/batu-pandang-ratapan-angin.jpg";
 import borobudur from "@/assets/borobudur-beyourtour.jpg";
 import bromo1 from "@/assets/bromo1-beyourtour.jpeg";
 import bromo2 from "@/assets/bromo2.jpeg";
-import bromo3 from "@/assets/bromo3-beyourtour.jpeg";
 import bromo5 from "@/assets/bromo5-beyourtour.jpg";
 import bromo6 from "@/assets/bromo6-beyourtour.jpg";
 import bromo7 from "@/assets/bromo7-beyourtour.jpg";
@@ -45,7 +42,6 @@ const Gallery = () => {
   const images = [
     { src: heroHome, alt: "Java volcanic landscape with rice terraces", category: "Landscapes" },
     { src: heroEastJava, alt: "Mount Bromo sunrise", category: "East Java" },
-    { src: heroEastJavaAlt, alt: "Mount Bromo volcanic crater", category: "East Java" },
     { src: heroCentralJava, alt: "Borobudur temple at sunrise", category: "Central Java" },
     { src: heroWestJava, alt: "West Java tea plantations", category: "West Java" },
     { src: gallery1, alt: "Rainforest trekking adventure", category: "Activities" },
@@ -65,7 +61,6 @@ const Gallery = () => {
     { src: borobudur, alt: "Borobudur temple complex", category: "Central Java" },
     { src: bromo1, alt: "Mount Bromo landscape", category: "East Java" },
     { src: bromo2, alt: "Bromo sea of sand", category: "East Java" },
-    { src: bromo3, alt: "Bromo volcanic activity", category: "East Java" },
     { src: bromo5, alt: "Bromo mountain range", category: "East Java" },
     { src: bromo6, alt: "Bromo crater rim", category: "East Java" },
     { src: bromo7, alt: "Bromo sunrise vista", category: "East Java" },
