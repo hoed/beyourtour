@@ -146,11 +146,11 @@ const About = () => {
               <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden card-shadow">
                 <img 
                   src={teamMember1} 
-                  alt="Sarah - Tour Manager"
+                  alt="Yurine - Tour Manager"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold font-heading mb-2">Sarah Wijaya</h3>
+              <h3 className="text-xl font-semibold font-heading mb-2">Yurine</h3>
               <p className="text-primary font-medium mb-2">Tour Manager</p>
               <p className="text-muted-foreground text-sm">
                 Expert in organizing seamless travel experiences
@@ -161,12 +161,12 @@ const About = () => {
               <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden card-shadow">
                 <img 
                   src={teamMember2} 
-                  alt="Adi - Senior Guide"
+                  alt="Hoed - Tour Guide"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold font-heading mb-2">Adi Kusuma</h3>
-              <p className="text-primary font-medium mb-2">Senior Guide</p>
+              <h3 className="text-xl font-semibold font-heading mb-2">Hoed</h3>
+              <p className="text-primary font-medium mb-2">Tour Guide</p>
               <p className="text-muted-foreground text-sm">
                 10+ years guiding across Java's destinations
               </p>
@@ -176,12 +176,12 @@ const About = () => {
               <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden card-shadow">
                 <img 
                   src={teamMember3} 
-                  alt="Rizky - Adventure Specialist"
+                  alt="Rachmanu - Tourism Accessor"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold font-heading mb-2">Rizky Pratama</h3>
-              <p className="text-primary font-medium mb-2">Adventure Specialist</p>
+              <h3 className="text-xl font-semibold font-heading mb-2">Rachmanu</h3>
+              <p className="text-primary font-medium mb-2">Tourism Accessor</p>
               <p className="text-muted-foreground text-sm">
                 Mountain trekking and outdoor activity expert
               </p>
@@ -191,12 +191,12 @@ const About = () => {
               <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden card-shadow">
                 <img 
                   src={teamMember4} 
-                  alt="Budi - Operations Coordinator"
+                  alt="Yunan - Expert Guide"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold font-heading mb-2">Budi Santoso</h3>
-              <p className="text-primary font-medium mb-2">Operations Coordinator</p>
+              <h3 className="text-xl font-semibold font-heading mb-2">Yunsn</h3>
+              <p className="text-primary font-medium mb-2">Expert Guide</p>
               <p className="text-muted-foreground text-sm">
                 Ensuring smooth logistics for every journey
               </p>
