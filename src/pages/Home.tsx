@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import HeroCarousel from "@/components/HeroCarousel";
 import DestinationCard from "@/components/DestinationCard";
 import ServiceCard from "@/components/ServiceCard";
-import heroHome from "@/assets/hero-home.jpg";
+import bromo6 from "@/assets/bromo6-beyourtour.jpg";
 import heroEastJava from "@/assets/hero-east-java.jpg";
 import heroCentralJava from "@/assets/hero-central-java.jpg";
 import heroWestJava from "@/assets/hero-west-java.jpg";
@@ -87,7 +87,7 @@ const Home = () => {
       />
       {/* Hero Section with Carousel */}
       <HeroCarousel
-        images={[heroHome, heroEastJava, heroCentralJava]}
+        images={[bromo6, heroEastJava, heroCentralJava]}
         title="Discover the Heart of Java"
         subtitle="Unforgettable adventures across Indonesia's most captivating island"
         height="large"
