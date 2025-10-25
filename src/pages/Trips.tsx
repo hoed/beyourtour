@@ -9,11 +9,12 @@ import heroWestJava from "@/assets/hero-west-java.jpg";
 import heroBali1 from "@/assets/bali2-beyourtour.jpeg";
 import heroBaliHoneymoon from "@/assets/bali-honeymoon-beyourtour.jpeg";
 import heroSurabaya from "@/assets/surabaya-citytour-beyourtour.jpg";
-import heroBandung from "@/assets/bandung1-beyourtour.jpg";
-import heroBandung2 from "@/assets/bandung2-beyourtour.jpg";
 import heroBanyuwangi from "@/assets/banyuwangi-beyourtour.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
+import heroBandung1 from "@/assets/bandung1-beyourtour.jpg";
+import heroBandung2 from "@/assets/bandung2-beyourtour.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/gallery-4.jpg";
 
 const Trips = () => {
   const trips = [
