@@ -4,10 +4,39 @@ import heroHome from "@/assets/hero-home.jpg";
 import heroEastJava from "@/assets/bromo0-beyourtour.jpg";
 import heroCentralJava from "@/assets/hero-central-java.jpg";
 import heroWestJava from "@/assets/hero-west-java.jpg";
+import heroEastJavaAlt from "@/assets/hero-east-java.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
+import baliHoneymoon from "@/assets/bali-honeymoon-beyourtour.jpeg";
+import bali1 from "@/assets/bali1-beyourtour.jpg";
+import bali2 from "@/assets/bali2-beyourtour.jpeg";
+import bali3 from "@/assets/bali3-beyourtour.jpg";
+import bali4 from "@/assets/bali4-beyourtour.jpeg";
+import bandung1 from "@/assets/bandung1-beyourtour.jpg";
+import bandung2 from "@/assets/bandung2-beyourtour.jpg";
+import banyuwangi from "@/assets/banyuwangi-beyourtour.jpg";
+import batuAngkruk from "@/assets/batu-angkruk.jpeg";
+import batuPandang from "@/assets/batu-pandang-ratapan-angin.jpg";
+import borobudur from "@/assets/borobudur-beyourtour.jpg";
+import bromo1 from "@/assets/bromo1-beyourtour.jpeg";
+import bromo2 from "@/assets/bromo2.jpeg";
+import bromo3 from "@/assets/bromo3-beyourtour.jpeg";
+import bromo5 from "@/assets/bromo5-beyourtour.jpg";
+import bromo6 from "@/assets/bromo6-beyourtour.jpg";
+import bromo7 from "@/assets/bromo7-beyourtour.jpg";
+import bromo8 from "@/assets/bromo8-beyourtour.jpg";
+import bromotour1 from "@/assets/bromotour1-beyourtour.jpg";
+import kawahIjen from "@/assets/kawahijen-beyourtour.jpg";
+import penanjakan from "@/assets/penanjakan-bromo.jpg";
+import surabaya from "@/assets/surabaya-citytour-beyourtour.jpg";
+import tamanNasional from "@/assets/taman-nasional-bromo.jpg";
+import telagaWarna from "@/assets/telagawarna-beyourtour.jpg";
+import tuguBromo from "@/assets/tugu-bromo.jpg";
+import tumpakSewu from "@/assets/tumpak-sewu.jpg";
+import jeep1 from "@/assets/jeep1.jpg";
+import innovaReborn from "@/assets/innova-reborn.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -16,12 +45,41 @@ const Gallery = () => {
   const images = [
     { src: heroHome, alt: "Java volcanic landscape with rice terraces", category: "Landscapes" },
     { src: heroEastJava, alt: "Mount Bromo sunrise", category: "East Java" },
+    { src: heroEastJavaAlt, alt: "Mount Bromo volcanic crater", category: "East Java" },
     { src: heroCentralJava, alt: "Borobudur temple at sunrise", category: "Central Java" },
     { src: heroWestJava, alt: "West Java tea plantations", category: "West Java" },
     { src: gallery1, alt: "Rainforest trekking adventure", category: "Activities" },
     { src: gallery2, alt: "Traditional batik textiles market", category: "Culture" },
     { src: gallery3, alt: "Indonesian culinary experience", category: "Cuisine" },
     { src: gallery4, alt: "Ancient Indonesian temple architecture", category: "Culture" },
+    { src: baliHoneymoon, alt: "Bali honeymoon destination", category: "Bali" },
+    { src: bali1, alt: "Bali beach resort", category: "Bali" },
+    { src: bali2, alt: "Bali rice terraces", category: "Bali" },
+    { src: bali3, alt: "Bali temple ceremony", category: "Bali" },
+    { src: bali4, alt: "Bali tropical paradise", category: "Bali" },
+    { src: bandung1, alt: "Bandung city tour", category: "West Java" },
+    { src: bandung2, alt: "Bandung highland scenery", category: "West Java" },
+    { src: banyuwangi, alt: "Banyuwangi coastal view", category: "East Java" },
+    { src: batuAngkruk, alt: "Batu Angkruk viewpoint", category: "East Java" },
+    { src: batuPandang, alt: "Batu Pandang Ratapan Angin", category: "East Java" },
+    { src: borobudur, alt: "Borobudur temple complex", category: "Central Java" },
+    { src: bromo1, alt: "Mount Bromo landscape", category: "East Java" },
+    { src: bromo2, alt: "Bromo sea of sand", category: "East Java" },
+    { src: bromo3, alt: "Bromo volcanic activity", category: "East Java" },
+    { src: bromo5, alt: "Bromo mountain range", category: "East Java" },
+    { src: bromo6, alt: "Bromo crater rim", category: "East Java" },
+    { src: bromo7, alt: "Bromo sunrise vista", category: "East Java" },
+    { src: bromo8, alt: "Bromo morning mist", category: "East Java" },
+    { src: bromotour1, alt: "Bromo tour experience", category: "East Java" },
+    { src: kawahIjen, alt: "Kawah Ijen blue fire", category: "East Java" },
+    { src: penanjakan, alt: "Penanjakan viewpoint Bromo", category: "East Java" },
+    { src: surabaya, alt: "Surabaya city tour", category: "East Java" },
+    { src: tamanNasional, alt: "Bromo Tengger Semeru National Park", category: "East Java" },
+    { src: telagaWarna, alt: "Telaga Warna colorful lake", category: "East Java" },
+    { src: tuguBromo, alt: "Tugu Bromo monument", category: "East Java" },
+    { src: tumpakSewu, alt: "Tumpak Sewu waterfall", category: "East Java" },
+    { src: jeep1, alt: "Bromo jeep adventure", category: "Activities" },
+    { src: innovaReborn, alt: "Private tour vehicle", category: "Activities" },
   ];
 
   return (
@@ -48,7 +106,7 @@ const Gallery = () => {
 
           {/* Category Filter */}
           <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {["All", "East Java", "Central Java", "West Java", "Landscapes", "Culture", "Activities", "Cuisine"].map((category) => (
+            {["All", "East Java", "Central Java", "West Java", "Bali", "Landscapes", "Culture", "Activities", "Cuisine"].map((category) => (
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
