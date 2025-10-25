@@ -1,9 +1,11 @@
 import Hero from "@/components/Hero";
 import TripCard from "@/components/TripCard";
 import heroHome from "@/assets/hero-home.jpg";
-import heroEastJava from "@/assets/hero-east-java.jpg";
+import heroEastJava from "@/assets/bromo1-beyourtour.jpeg";
 import heroCentralJava from "@/assets/hero-central-java.jpg";
 import heroWestJava from "@/assets/hero-west-java.jpg";
+import heroBali1 from "@/assets/bali2-beyourtour.jpeg";
+import heroBaliHoneymoon from "@/assets/bali-honeymoon-beyourtour.jpeg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
@@ -41,7 +43,7 @@ const Trips = () => {
     {
       title: "Bali Group Adventure",
       description: "Rafting Adventure, Dinner with Kuta Sunset and local village tour.",
-      image: heroCentralJava,
+      image: heroBali1,
       duration: "4 Days / 3 Nights",
       groupSize: "60 people",
       location: "Bali",
@@ -95,7 +97,7 @@ const Trips = () => {
     {
       title: "Bali Honeymoon Experience",
       description: "Specialized tour for couple who escape from routine with optimal timing for landscapes villas, cultural events, and portrait opportunities at iconic locations.",
-      image: gallery1,
+      image: heroBaliHoneymoon,
       duration: "4 Days / 3 Nights",
       groupSize: "2 people",
       location: "Bali",
