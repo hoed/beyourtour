@@ -14,7 +14,6 @@ import bali3 from "@/assets/bali3-beyourtour.jpg";
 import bali4 from "@/assets/bali4-beyourtour.jpeg";
 import bandung1 from "@/assets/bandung1-beyourtour.jpg";
 import bandung2 from "@/assets/bandung2-beyourtour.jpg";
-import banyuwangi from "@/assets/banyuwangi-beyourtour.jpg";
 import batuAngkruk from "@/assets/batu-angkruk.jpeg";
 import batuPandang from "@/assets/batu-pandang-ratapan-angin.jpg";
 import borobudur from "@/assets/borobudur-beyourtour.jpg";
@@ -51,7 +50,6 @@ const Gallery = () => {
     { src: bali4, alt: "Bali tropical paradise", category: "Bali" },
     { src: bandung1, alt: "Bandung city tour", category: "West Java" },
     { src: bandung2, alt: "Bandung highland scenery", category: "West Java" },
-    { src: banyuwangi, alt: "Banyuwangi coastal view", category: "East Java" },
     { src: batuAngkruk, alt: "Batu Angkruk viewpoint", category: "East Java" },
     { src: batuPandang, alt: "Batu Pandang Ratapan Angin", category: "East Java" },
     { src: borobudur, alt: "Borobudur temple complex", category: "Central Java" },
