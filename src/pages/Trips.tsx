@@ -56,7 +56,7 @@ const Trips = () => {
     {
       title: "Bandung Highland Escape",
       description: "Start from Surabaya to discover West Java's natural beauty with visits to Tangkuban Perahu volcano, Ciater hot springs, and scenic tea plantations.",
-      image: heroWestJava,
+      image: heroBandung2,
       duration: "3 Days / 2 Night",
       groupSize: "2-15 people",
       location: "West Java",
