@@ -178,22 +178,6 @@ const About = () => {
               <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden card-shadow">
                 <img 
                   src={teamMember3} 
-                  alt="Rachmanu - Tourism Accessor"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-semibold font-heading mb-2">Rachmanu</h3>
-              <p className="text-primary font-medium mb-2">Tourism Accessor</p>
-              <p className="text-muted-foreground text-sm">
-                Rachmanu’s deep understanding of different cultures and traditions enriches every tourism experiences. 
-                He is an activist of tourism association also a famous speaker about tourism in East Java.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden card-shadow">
-                <img 
-                  src={teamMember4} 
                   alt="Yunan - Expert Guide"
                   className="w-full h-full object-cover"
                 />
@@ -203,6 +187,22 @@ const About = () => {
               <p className="text-muted-foreground text-sm">
                 Yunan specializes in curating luxurious vacations with attention to detail and personalized service. 
                 He is also as an activist of tourism associations. 
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden card-shadow">
+                <img 
+                  src={teamMember4} 
+                  alt="Rachmanu - Tourism Accessor"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold font-heading mb-2">Rachmanu</h3>
+              <p className="text-primary font-medium mb-2">Tourism Accessor</p>
+              <p className="text-muted-foreground text-sm">
+                Rachmanu’s deep understanding of different cultures and traditions enriches every tourism experiences. 
+                He is an activist of tourism association also a famous speaker about tourism in East Java.
               </p>
             </div>
           </div>
