@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import TripCard from "@/components/TripCard";
 import heroHome from "@/assets/hero-home.jpg";
 import heroEastJava from "@/assets/bromo1-beyourtour.jpeg";
+import heroIjen from "@/assets/kawahijen-beyourtour.jpg";
 import heroCentralJava from "@/assets/hero-central-java.jpg";
 import heroWestJava from "@/assets/hero-west-java.jpg";
 import heroBali1 from "@/assets/bali2-beyourtour.jpeg";
@@ -25,11 +26,11 @@ const Trips = () => {
     {
       title: "Bromo-Ijen Volcano Adventure",
       description: "The ultimate volcanic experience combining Mount Bromo sunrise with Ijen's mesmerizing blue flames. Perfect for adventure seekers.",
-      image: heroEastJava,
+      image: heroIjen,
       duration: "3 Days / 2 Nights",
       groupSize: "2-6 people",
       location: "East Java",
-      price: "From IDR 3.5M/px",
+      price: "From IDR 4M/px",
     },
     {
       title: "Yogyakarta Cultural Heritage",
