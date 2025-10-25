@@ -4,6 +4,7 @@ import heroHome from "@/assets/hero-home.jpg";
 import heroEastJava from "@/assets/bromo1-beyourtour.jpeg";
 import heroIjen from "@/assets/kawahijen-beyourtour.jpg";
 import heroCentralJava from "@/assets/hero-central-java.jpg";
+import heroOverland from "@/assets/batu-pandang-ratapan-angin.jpg";
 import heroWestJava from "@/assets/hero-west-java.jpg";
 import heroBali1 from "@/assets/bali2-beyourtour.jpeg";
 import heroBaliHoneymoon from "@/assets/bali-honeymoon-beyourtour.jpeg";
@@ -80,7 +81,7 @@ const Trips = () => {
     {
       title: "Java Overland Adventure",
       description: "The ultimate Java experience combining Bromo, Ijen, Borobudur, and cultural highlights in one incredible journey.",
-      image: heroHome,
+      image: heroOverland,
       duration: "7 Days / 6 Nights",
       groupSize: "2-15 people",
       location: "All Java",
