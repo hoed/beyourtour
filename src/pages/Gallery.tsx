@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Hero from "@/components/Hero";
 import heroHome from "@/assets/hero-home.jpg";
-import heroEastJava from "@/assets/hero-east-java.jpg";
+import heroEastJava from "@/assets/bromo0-beyourtour.jpg";
 import heroCentralJava from "@/assets/hero-central-java.jpg";
 import heroWestJava from "@/assets/hero-west-java.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
