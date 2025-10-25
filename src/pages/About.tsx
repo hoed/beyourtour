@@ -153,7 +153,8 @@ const About = () => {
               <h3 className="text-xl font-semibold font-heading mb-2">Yurine</h3>
               <p className="text-primary font-medium mb-2">Tour Manager</p>
               <p className="text-muted-foreground text-sm">
-                Expert in organizing seamless travel experiences
+                Yurine is passionate about creating unique travel experiences tailored to each client’s preferences. 
+                With years of experience in the travel industry, he ensures every trip is unforgettable.
               </p>
             </div>
 
@@ -168,7 +169,8 @@ const About = () => {
               <h3 className="text-xl font-semibold font-heading mb-2">Hoed</h3>
               <p className="text-primary font-medium mb-2">Tour Guide</p>
               <p className="text-muted-foreground text-sm">
-                10+ years guiding across Java's destinations
+                Hoed’s love for adventure and exploration makes her the perfect guide for thrill-seekers. 
+                His knowledge of hidden gems and off-the-beaten-path destinations will take your journey to the next level.
               </p>
             </div>
 
@@ -183,7 +185,8 @@ const About = () => {
               <h3 className="text-xl font-semibold font-heading mb-2">Rachmanu</h3>
               <p className="text-primary font-medium mb-2">Tourism Accessor</p>
               <p className="text-muted-foreground text-sm">
-                Mountain trekking and outdoor activity expert
+                Rachmanu’s deep understanding of different cultures and traditions enriches every tourism experiences. 
+                He is an activist of tourism association also a famous speaker about tourism in East Java.
               </p>
             </div>
 
@@ -195,10 +198,11 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold font-heading mb-2">Yunsn</h3>
+              <h3 className="text-xl font-semibold font-heading mb-2">Yunan</h3>
               <p className="text-primary font-medium mb-2">Expert Guide</p>
               <p className="text-muted-foreground text-sm">
-                Ensuring smooth logistics for every journey
+                Yunan specializes in curating luxurious vacations with attention to detail and personalized service. 
+                He is also as an activist of tourism associations. 
               </p>
             </div>
           </div>
