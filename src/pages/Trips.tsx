@@ -8,7 +8,7 @@ import heroOverland from "@/assets/batu-pandang-ratapan-angin.jpg";
 import heroWestJava from "@/assets/hero-west-java.jpg";
 import heroBali1 from "@/assets/bali2-beyourtour.jpeg";
 import heroBaliHoneymoon from "@/assets/bali-honeymoon-beyourtour.jpeg";
-import gallery1 from "@/assets/gallery-1.jpg";
+import heroSurabaya from "@/assets/surabaya-citytour-beyourtour.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
@@ -117,7 +117,7 @@ const Trips = () => {
     {
       title: "Surabaya History Adventure",
       description: "Explore Surabaya Old Town and stay in 4stars Hotel, experiencing the jetsky with Suramadu Bridge View.",
-      image: gallery1,
+      image: heroSurabaya,
       duration: "2 Days / 1 Nights",
       groupSize: "2-10 people",
       location: "Surabaya East Java",
