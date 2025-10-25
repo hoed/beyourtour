@@ -40,7 +40,7 @@ const Gallery = () => {
     { src: heroHome, alt: "Java volcanic landscape with rice terraces", category: "Landscapes" },
     { src: heroEastJava, alt: "Mount Bromo sunrise", category: "East Java" },
     { src: heroCentralJava, alt: "Borobudur temple at sunrise", category: "Central Java" },
-    { src: heroWestJava, alt: "West Java tea plantations", category: "West Java" },
+    { src: bandung2, alt: "West Java tea plantations", category: "West Java" },
     { src: gallery1, alt: "Rainforest trekking adventure", category: "Activities" },
     { src: gallery2, alt: "Traditional batik textiles market", category: "Culture" },
     { src: gallery3, alt: "Indonesian culinary experience", category: "Cuisine" },
