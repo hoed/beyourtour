@@ -8,6 +8,7 @@ import { toast } from "sonner";
 import { Mail, Phone, MapPin, Instagram, Facebook, Send } from "lucide-react";
 import heroHome from "@/assets/hero-home.jpg";
 import { z } from "zod";
+import { supabase } from "@/integrations/supabase/client";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, { message: "Name is required" }).max(100),
@@ -65,8 +66,18 @@ const Contact = () => {
       // Validate form data
       const validatedData = contactSchema.parse(formData);
 
-      // Simulate form submission (replace with actual API call)
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      // Submit to Lovable Cloud database
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert([{
+          name: validatedData.name,
+          email: validatedData.email,
+          phone: validatedData.phone || null,
+          subject: validatedData.subject,
+          message: validatedData.message,
+        }]);
+
+      if (error) throw error;
 
       toast.success("Message sent successfully! We'll get back to you soon.", {
         description: "Thank you for contacting Be Your Tour",

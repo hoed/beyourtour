@@ -27,9 +27,9 @@ const HeroCarousel = ({
   overlay = true 
 }: HeroCarouselProps) => {
   const heightClasses = {
-    small: "h-[40vh] min-h-[300px]",
-    medium: "h-[60vh] min-h-[400px]",
-    large: "h-[85vh] min-h-[600px]",
+    small: "h-[40vh] min-h-[250px]",
+    medium: "h-[60vh] min-h-[350px]",
+    large: "h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[85vh] min-h-[400px] sm:min-h-[500px] lg:min-h-[600px]",
   };
 
   const plugin = useRef(
@@ -53,7 +53,7 @@ const HeroCarousel = ({
                 <img
                   src={image}
                   alt={`${title} - slide ${index + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                   loading={index === 0 ? "eager" : "lazy"}
                 />
                 {overlay && (
@@ -97,11 +97,11 @@ const HeroCarousel = ({
       {/* Content */}
       <div className="absolute inset-0 z-10 flex items-center justify-center">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold font-heading text-white mb-4 drop-shadow-2xl animate-fade-in">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold font-heading text-white mb-3 md:mb-4 drop-shadow-2xl animate-fade-in px-4">
             {title}
           </h1>
           {subtitle && (
-            <p className="text-lg md:text-xl lg:text-2xl text-white/95 mb-8 max-w-3xl mx-auto drop-shadow-lg animate-fade-in font-light">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 mb-6 md:mb-8 max-w-3xl mx-auto drop-shadow-lg animate-fade-in font-light px-4">
               {subtitle}
             </p>
           )}
