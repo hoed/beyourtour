@@ -1,4 +1,5 @@
-import { MessageCircle, Send } from "lucide-react";
+import { Send } from "lucide-react";
+import WhatsAppIcon from "./icons/WhatsAppIcon";
 
 const FloatingButtons = () => {
   return (
@@ -11,7 +12,7 @@ const FloatingButtons = () => {
         className="group flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#1fb855] text-white rounded-full shadow-elegant hover:shadow-glow transition-smooth hover:scale-110"
         aria-label="Chat on WhatsApp"
       >
-        <MessageCircle className="w-7 h-7" />
+        <WhatsAppIcon className="w-7 h-7" />
       </a>
 
       {/* Telegram Button */}
