@@ -10,7 +10,7 @@ import heroBali1 from "@/assets/bali2-beyourtour.jpeg";
 import heroBaliHoneymoon from "@/assets/bali-honeymoon-beyourtour.jpeg";
 import heroSurabaya from "@/assets/surabaya-citytour-beyourtour.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
+import heroBanyuwangi from "@/assets/banyuwangi-beyourtour.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 
 const Trips = () => {
@@ -90,7 +90,7 @@ const Trips = () => {
     {
       title: "Banyuwangi Culture Tour",
       description: "Adventure journey featuring Africa van Java, Beach visits, traditional meals, and cultural performances in Banyuwangi.",
-      image: gallery3,
+      image: heroBanyuwangi,
       duration: "4 Days / 3 Nights",
       groupSize: "4-12 people",
       location: "Central Java",
