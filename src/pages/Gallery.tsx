@@ -19,15 +19,12 @@ import batuAngkruk from "@/assets/batu-angkruk.jpeg";
 import batuPandang from "@/assets/batu-pandang-ratapan-angin.jpg";
 import borobudur from "@/assets/borobudur-beyourtour.jpg";
 import bromo1 from "@/assets/bromo1-beyourtour.jpeg";
-import bromo2 from "@/assets/bromo2.jpeg";
-import bromo5 from "@/assets/bromo5-beyourtour.jpg";
 import bromo6 from "@/assets/bromo6-beyourtour.jpg";
 import bromo7 from "@/assets/bromo7-beyourtour.jpg";
 import bromo8 from "@/assets/bromo8-beyourtour.jpg";
 import bromotour1 from "@/assets/bromotour1-beyourtour.jpg";
 import kawahIjen from "@/assets/kawahijen-beyourtour.jpg";
 import penanjakan from "@/assets/penanjakan-bromo.jpg";
-import surabaya from "@/assets/surabaya-citytour-beyourtour.jpg";
 import tamanNasional from "@/assets/taman-nasional-bromo.jpg";
 import telagaWarna from "@/assets/telagawarna-beyourtour.jpg";
 import tuguBromo from "@/assets/tugu-bromo.jpg";
@@ -60,15 +57,12 @@ const Gallery = () => {
     { src: batuPandang, alt: "Batu Pandang Ratapan Angin", category: "East Java" },
     { src: borobudur, alt: "Borobudur temple complex", category: "Central Java" },
     { src: bromo1, alt: "Mount Bromo landscape", category: "East Java" },
-    { src: bromo2, alt: "Bromo sea of sand", category: "East Java" },
-    { src: bromo5, alt: "Bromo mountain range", category: "East Java" },
     { src: bromo6, alt: "Bromo crater rim", category: "East Java" },
     { src: bromo7, alt: "Bromo sunrise vista", category: "East Java" },
     { src: bromo8, alt: "Bromo morning mist", category: "East Java" },
     { src: bromotour1, alt: "Bromo tour experience", category: "East Java" },
     { src: kawahIjen, alt: "Kawah Ijen blue fire", category: "East Java" },
     { src: penanjakan, alt: "Penanjakan viewpoint Bromo", category: "East Java" },
-    { src: surabaya, alt: "Surabaya city tour", category: "East Java" },
     { src: tamanNasional, alt: "Bromo Tengger Semeru National Park", category: "East Java" },
     { src: telagaWarna, alt: "Telaga Warna colorful lake", category: "East Java" },
     { src: tuguBromo, alt: "Tugu Bromo monument", category: "East Java" },
