@@ -1,8 +1,8 @@
 import Hero from "@/components/Hero";
 import { Users, Heart, Award, Globe } from "lucide-react";
 import heroHome from "@/assets/hero-home.jpg";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
+import gallery1 from "@/assets/logo.jpg";
+import gallery3 from "@/assets/7-3.jpg";
 import teamMember1 from "@/assets/team-member-1.jpg";
 import teamMember2 from "@/assets/team-member-2.jpg";
 import teamMember3 from "@/assets/team-member-3.jpg";
