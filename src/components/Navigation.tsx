@@ -23,6 +23,7 @@ const Navigation = () => {
   const serviceLinks = [
     { to: "/services/tour-packages", label: "Tour Packages" },
     { to: "/services/car-bus-rental", label: "Car / Bus Rental" },
+    { to: "https://moretrip.id", label: "Flight Booking" },
     { to: "/services/mice-services", label: "MICE Services" },
     { to: "/services/travel-documents", label: "Travel Documents" },
     { to: "/services/tourism-village", label: "Tourism Village Development" },
